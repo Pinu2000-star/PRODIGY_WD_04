@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Subhranshu Sekhar Nayak</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e3c72, #0745b0);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 4px 10px rgba(166, 0, 255, 0.945);
+        }
+        nav {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+        }
+        nav ul li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+        nav ul li a:hover {
+            background: yellow;
+            color: black;
+        }
+        section {
+            margin: 80px auto;
+            width: 80%;
+            background: rgba(2, 19, 210, 0.2);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgb(78, 221, 159);
+        }
+        .project {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 50%;
+            box-shadow: 0 4px 10px rgba(48, 200, 255, 0.959);
+        }
+        .project h3 {
+            color: yellow;
+        }
+        .social-icons img {
+            width: 40px;
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Subhranshu Sekhar Nayak</h1>
+        <p>Web Developer | Designer | Programmer</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a creative and detail-oriented web developer with a strong passion for designing interactive and user-friendly experiences. I specialize in turning innovative ideas into visually appealing and fully functional websites. Constantly exploring new technologies, I thrive in crafting solutions that merge aesthetics with functionality</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Homeplant</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Bookstore</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: subhranshu@example.com</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/subhranshu-sekhar-nayak-21b9a0248" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/Pinu2000-star?tab=projects" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+            </a>
+        </div>
+    </section>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll("nav ul li a").forEach(link => {
+                link.addEventListener("mouseover", function() {
+                    this.style.backgroundColor = "yellow";
+                    this.style.color = "black";
+                });
+                link.addEventListener("mouseout", function() {
+                    this.style.backgroundColor = "blue";
+                    this.style.color = "white";
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
